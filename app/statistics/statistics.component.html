@@ -1,0 +1,36 @@
+<nav class="navbar navbar-default navbar-static-top navbar-inverse">
+  <div class="container">
+      <a (click)="BackUser()" class="navbar-text navbar-right navbar-link">Back</a>
+      <a text="name" class="navbar-text navbar-left">You are Logged</a>
+  </div>
+</nav>
+<div *ngIf="cryptos">
+  <div id="crypto-container" *ngFor="let crypto of objectKeys(cryptos)">
+    <span class="left">{{ crypto }}</span>
+    <span class="right">{{ cryptos[crypto].EUR | currency:'EUR':true}}</span>
+    <span class="right2">{{ cryptos[crypto].USD | currency:'USD':true}}</span>
+  </div>
+</div>
+<br>
+<div id="chartContainer">
+</div>
+  <h1>Cryptoconverter</h1>
+  <input id="input"type="number"name="quantity" min="1" max="10000" value="1">
+  <select id="selector">
+    <option value="EUR">EUR</option>
+    <option value="USD">USD</option>
+    <option value="GBP">GBP</option>
+    <option value="RUB">RUB</option>
+  </select>
+ <h1>convert into</h1>
+ <select id="selector2">
+  <option value="EUR">BTC</option>
+  <option value="USD">LTC</option>
+  <option value="GBP">ETH</option>
+</select>
+  <button (click)="onClickMe()">Click me!</button>
+  {{number}}
+  {{currencyOn}}
+  {{result|number:"1.2"}}
+ 
+

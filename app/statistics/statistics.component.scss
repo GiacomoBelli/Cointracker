@@ -1,0 +1,53 @@
+.Crypto-values {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: auto;
+  }
+  
+  .example-container > * {
+    width: 100%;
+    margin: auto;
+  }
+  
+  div#crypto-container {
+    background:white;
+    width: 70%;
+    margin: 0 auto 5px auto;
+    padding: 1em;
+    box-shadow: 1px 1px 0 lightgrey 
+    
+     
+  }
+  
+  span.left {
+    font-weight: bold;
+  }
+  
+  span.right {
+    float:right;
+    text-align: left;
+  }
+  span.right2{
+    margin: auto;
+    float: right;
+    text-align: left;
+    width: 10%;
+
+  }
+  div#chartContainer{
+    height: 300px;
+    width: 70%;
+    display: block;
+    margin: 0% auto;
+    column-fill: auto;
+ }
+ div#converter{
+  width: 100%;
+  text-align: center;
+
+ }
+ 
+ 
+
+  
